@@ -41,5 +41,7 @@ Resource: Regulation (EU) 2016/679 (GDPR), Recital 26 - https://eur-lex.europa.e
 
 
 ## Misconception in My Track
+A common wrong belief is that marking a feature as deprecated requires a MAJOR version increase. The correct rule is that deprecation is announced in a MINOR release. The MAJOR increase comes later, when the functionality is actually removed in a backward incompatible way. This gives users time to move to the new API. Evidence: the Semantic Versioning Specification (SemVer) section, item 7, covers the minor version and deprecation.
 
 ## Open Question
+Does a change in the assistant's answers, such as a new model or retrieval source, count as a breaking API change under SemVer? I would check how major API providers version behavior changes that do not alter the API structure.
