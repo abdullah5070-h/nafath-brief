@@ -23,10 +23,22 @@ Resource: Preventing Insecure Network Connections - https://developer.apple.com/
 
 
 ## Networking
+IPv4 addresses are 32 bits long, while IPv6 addresses are 128 bits long. This gives IPv6 a much greater number of addressable nodes, more levels of addressing hierarchy, and simpler automatic address configuration. IPv6 also simplifies the packet header and uses extension headers for optional information. As the number of connected devices grows, the larger space supports them without heavy reliance on address translation. The standard notes that this makes endpoints more visible, which raises privacy considerations.
+
+Resource: RFC 8200 - Internet Protocol, Version 6 (IPv6) Specification - https://www.rfc-editor.org/rfc/rfc8200
+
 
 ## Cybersecurity
+Prompt injection happens when input changes a language model's behavior in unintended ways. In direct injection, the user's own prompt causes this. In indirect injection, the model reads external content, such as a website or file, containing hidden instructions. Two ways to reduce the risk are least-privilege access, which limits what the model can do, and input and output filtering. OWASP notes that no method is guaranteed to prevent it.
+
+Resource: LLM01:2025 Prompt Injection - https://genai.owasp.org/llmrisk/llm01-prompt-injection/
+
 
 ## Data
+Pseudonymization replaces direct identifiers, such as a name with a user ID, but the data can still be linked back to a person using additional information. Under the GDPR it remains personal data, so data protection rules still apply. Anonymization makes the person no longer identifiable, considering all means reasonably likely to be used. Only anonymous information falls outside data protection law. For chat logs, pseudonymization helps but does not remove legal duties.
+
+Resource: Regulation (EU) 2016/679 (GDPR), Recital 26 - https://eur-lex.europa.eu/eli/reg/2016/679/oj
+
 
 ## Misconception in My Track
 
